@@ -1,5 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions are to be used with each other. When calculating the inverse of a matrix, it is sometimes
+## computationally expensive. So makeCacheMatrix will create a list that has functions allowing you to cache the solution
+## of the inverse of a matrix. cacheSolve, will use that cache to solve the inverse of the matrix. Example usage:
+## myMatrix <- makeCacheMatrix(cbind(c(2,2), c(3,2)))
+## cacheSolve(myMatrix) ## calculates the inverse
+## cacheSolve(myMatrix) ## uses the cache
 
 ## This function will make a list. The list contains functions for setting the matrix, getting the matrix back
 ## setting the inverse of the matrix and getting the inverse of the matrix back.
